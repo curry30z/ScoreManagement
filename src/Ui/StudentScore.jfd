@@ -1,0 +1,85 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {comp scrollPane1:::p:490:p, seq {comp scrollPane2:::p::p, space :p:40:p, comp label1:::p:187:p, space :p:33:p, comp button1:::p::p}}, space ::7:x}}"
+			"$verticalGroup": "par l {seq l {par l {seq t {space ::50:x, comp button1:::p::p, space :p:30:p}, seq {par l {seq {space :p:19:p, comp label1:::p::p}, seq l {space :::p, comp scrollPane2:::p:36:p}}, space ::58:x}}, comp scrollPane1:::p:217:p, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "学生成绩管理系统"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "个人成绩查询"
+				"font": new java.awt.Font( "Dialog", 1, 24 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "姓名" )
+						add( "成绩" )
+						add( "课程" )
+						add( "授课教师" )
+						add( "学分" )
+						add( "录入时间" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "成绩查询"
+				"font": new java.awt.Font( "Microsoft JhengHei", 3, 18 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar1"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu1"
+						"text": "欢迎学生"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 18 )
+						"background": new java.awt.Color( 60, 159, 140, 255 )
+						"foreground": sfield java.awt.Color red
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu2"
+							"text": "注销登录"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "menu2MouseClicked", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu3"
+							"text": "退出系统"
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 505, 365 )
+		} )
+	}
+}

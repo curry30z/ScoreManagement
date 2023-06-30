@@ -1,0 +1,132 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:22:p, comp label1:::p::p}, seq l {space :::p, par l {seq {par l {comp label2:::p:77:p, seq l {space :p:12:p, comp label4:::p:39:p}}, space :::p, par l {seq {comp textField3:::p:105:p, space u:::p, comp label5:::p:45:p}, seq {comp textField1:::p:100:p, space u:::p, comp label3:::p::p}}, par l {seq {space :::x, comp textField2:::p:111:p, space :p:47:p, comp scrollPane1:::p::p, space :p:68:p}, seq l {space s:::p, comp textField4:::p:38:p}}}, seq l {comp label8:::p::p, space :::x, comp button2:::p::p}, seq l {comp label7:::p::p, space :::x, comp button1:::p::p, space :p:32:p}, seq l {comp label9:::p::p, space :::x, comp button3:::p::p, space :p:24:p}, seq {comp label6:::p:87:p, space :::p, comp textField5:::p:136:p, space u:::p, comp label10:::p::p, space :p:38:p, comp textField6:::p:101:p, space :0:0:x}}}}, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, comp label1:::p::p, space :::p, par l {par b {comp label2::b:p:26:p, comp textField1::b:p::p, comp label3::b:p::p, comp textField2::b:p:26:p}, comp scrollPane1::l:p:44:p}, space :::p, par b {comp textField3::b:p::p, comp label4::b:p::p, comp label5::b:p:19:p, comp textField4::b:p::p}, space s:::p, par b {comp label6::b:p:33:p, comp textField5::b:::x, comp label10::b:p::p, comp textField6::b:p::p}, space :p:85:p, par b {comp label7::b:p::p, comp button1::b:p::p}, space s:::p, par b {comp label8::b:p::p, comp button2::b:p::p}, space s:::p, par b {comp label9::b:p::p, comp button3::b:p::p}, space :::x}}"
+		} ) {
+			name: "this"
+			"title": "学生成绩管理系统"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "教师信息管理"
+				"font": new java.awt.Font( "宋体", 1, 24 )
+				"foreground": sfield java.awt.Color red
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "教师工号"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "教师姓名"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "电话"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "性别"
+				"font": new java.awt.Font( "宋体", 2, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "部门"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "输入教师工号和教师姓名删除教师信息"
+				"font": new java.awt.Font( "宋体", 0, 18 )
+				"foreground": sfield java.awt.Color red
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "删除信息"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "输入教师姓名电话性别部门增添教师信息"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+				"foreground": sfield java.awt.Color magenta
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "增添教师信息"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "输入教师工号修改其他信息"
+				"font": new java.awt.Font( "宋体", 0, 18 )
+				"foreground": sfield java.awt.Color gray
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "修改教师信息"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "用户密码"
+				"font": new java.awt.Font( "宋体", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar1"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu1"
+						"text": "菜单"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu2"
+							"text": "注销登录"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "menu2MouseClicked", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu3"
+							"text": "返回主菜单"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "menu3MouseClicked", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+							name: "menu4"
+							"text": "退出系统"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "menu4MouseClicked", true ) )
+						} )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 545, 420 )
+		} )
+	}
+}
